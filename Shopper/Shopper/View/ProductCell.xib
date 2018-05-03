@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="gTV-IL-0wX" customClass="ProductCell" customModule="Shopper" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aK6-Ey-euu">
+                        <rect key="frame" x="8" y="10" width="130" height="130"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="130" id="QHH-58-edJ"/>
+                            <constraint firstAttribute="height" constant="130" id="hvl-Ys-KWA"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Rpv-Tp-0z5">
+                        <rect key="frame" x="154" y="10" width="201" height="130"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTU-Ap-UaM">
+                                <rect key="frame" x="0.0" y="0.0" width="201" height="47"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BH4-8D-da0">
+                                <rect key="frame" x="0.0" y="47" width="201" height="41"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AM3-jP-Gez">
+                                <rect key="frame" x="0.0" y="88" width="201" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Rpv-Tp-0z5" firstAttribute="leading" secondItem="aK6-Ey-euu" secondAttribute="trailing" constant="16" id="0TR-fW-WMz"/>
+                <constraint firstItem="aK6-Ey-euu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="6mN-9W-YKb"/>
+                <constraint firstItem="Rpv-Tp-0z5" firstAttribute="top" secondItem="aK6-Ey-euu" secondAttribute="top" id="E02-6G-811"/>
+                <constraint firstItem="aK6-Ey-euu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="RYa-cM-BUt"/>
+                <constraint firstAttribute="bottom" secondItem="Rpv-Tp-0z5" secondAttribute="bottom" constant="20" id="dcx-PC-MDX"/>
+                <constraint firstAttribute="trailing" secondItem="Rpv-Tp-0z5" secondAttribute="trailing" constant="20" id="qTX-ub-ofc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="375" height="160"/>
+            <connections>
+                <outlet property="productImage" destination="aK6-Ey-euu" id="GLe-Zw-1GN"/>
+                <outlet property="productName" destination="BH4-8D-da0" id="IHQ-yc-edM"/>
+                <outlet property="productPrice" destination="QTU-Ap-UaM" id="Pi8-4U-kuH"/>
+                <outlet property="reviewDetails" destination="AM3-jP-Gez" id="CV0-7B-1wY"/>
+            </connections>
+            <point key="canvasLocation" x="10.5" y="-22"/>
+        </collectionViewCell>
+    </objects>
+</document>
