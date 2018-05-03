@@ -37,3 +37,9 @@ The following **additional** features are implemented:
  * [x] Optional: Used collection view, in case we need to change the layout in future.
  * [x] Optional: Demonstrated mocking of the network layer in unit tests.
  
+ 
+ Here's a walkthrough of implemented user stories:
+
+<img src='https://i.imgur.com/8CGK5gP.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
